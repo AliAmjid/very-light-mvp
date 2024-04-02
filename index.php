@@ -8,7 +8,7 @@ final class HomepagePresenter extends BasePresenter
 {
     public function render(): void
     {
-        $this->setPageTitle('Nastěnka');
+        $this->setPageTitle('Přehled');
         $this->setTemplateName(__DIR__ . '/template/homepage.php');
         $this->template->categories = $this->repository->getAllCategories();
         $categoryFilter = $this->getParameter('categoryId');
